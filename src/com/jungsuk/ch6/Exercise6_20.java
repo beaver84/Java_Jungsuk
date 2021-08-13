@@ -4,24 +4,22 @@ import java.util.Random;
 
 class Exercise6_20
 {
-    public static int[] shuffle(int[] inputArr){
+    public static int[] shuffle(int[] arr){
 
         Random rand = new Random();
         int a = 0;
         int b = 0;
         int temp = 0;
 
-        for(int i = 0; i < inputArr.length; i++){
-            a = rand.nextInt(10);
-            b = rand.nextInt(10);
-            temp = a;
-            a = b;
-            b = temp;
-            inputArr[a] = a;
-            inputArr[b] = b;
+        for(int i = 0; i < arr.length; i++){
+            a = rand.nextInt(9);
+            b = rand.nextInt(9);
+            temp = arr[a];
+            arr[a] = arr[b];
+            arr[b] = temp;
         }
 
-        return inputArr;
+        return arr;
     }
 
 
