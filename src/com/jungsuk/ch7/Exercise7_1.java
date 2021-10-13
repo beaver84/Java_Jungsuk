@@ -28,7 +28,6 @@ class SutdaCard{
     }
 
     //info()대신 Object클래스의 toString()을 오버라이딩 헀다.
-
     @Override
     public String toString() {
         return "SutdaCard{" +
